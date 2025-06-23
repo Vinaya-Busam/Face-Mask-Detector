@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static\style.css" />
+    <title>Face Mask detector</title>
+    <script>
+      function onButtonClick() {
+        document.getElementById("result-section").style.display = "none";
+      }
+    </script>
+  </head>
+  <body align="center">
+    <h1>Face Mask Detection</h1>
+    <h2>Select any option 😉</h2>
+    <br />
+    <br />
+    <div class="option-container">
+      <form method="POST" enctype="multipart/form-data" class="option-1">
+        <p>
+          <b class="choice-1">Upload image</b>
+          <input type="file" name="image" onclick="onButtonClick()" /> <br />
+          <button type="submit">Detect from Image</button>
+        </p>
+      </form>
+
+      <form method="POST" class="option-2">
+        <p>
+          <div class="choice-2"><b>Use Webcam </b> </div>
+          <br />
+          <button
+            type="submit"
+            name="use_webcam"
+            value="1"
+            onclick="onButtonClick()"
+          >
+            Open Webcam
+          </button>
+        </p>
+      </form>
+    </div>
+
+    {% if result %}
+    <div id="result-section">
+      <h2>Prediction Result:</h2>
+      <img src="{{ img_path }}" width="500" />
+    </div>
+    {% endif %}
+    
+  </body>
+</html>

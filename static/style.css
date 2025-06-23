@@ -1,0 +1,80 @@
+h1 {
+  color: rgb(62, 63, 63);
+  font-family: fantasy;
+  font-size: 55px;
+  margin-top: 10px;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(171, 119, 248),
+    rgba(247, 247, 164, 0.236)
+  );
+  padding: 40px;
+}
+
+form.option-1,
+form.option-2 {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 0px 10px black;
+  padding: 10px;
+  width: 400px;
+  height: 195px;
+}
+
+.option-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+input[type="file"] {
+  padding: 12px;
+  font-size: 20px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+button {
+  background: lightblue;
+  color: darkblue;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 23px;
+}
+
+button:hover {
+  background: lightcyan;
+}
+
+.choice-1 {
+  font-size: 28px;
+  font-family: cursive;
+  margin-bottom: 20px;
+}
+
+.choice-2 {
+  font-size: 29px;
+  font-family: cursive;
+  padding-top: 15px;
+  margin-bottom: 5px;
+}
+
+img {
+  margin-top: 10px;
+  border: 3px solid #1d1d1d;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 28px;
+  font-style: italic;
+}
